@@ -1,10 +1,100 @@
 <!DOCTYPE html>
 <main>
+    <style>
+        body {
+            background-image: url(MonkeySpin.gif);
+            background-size:cover
+        }
+        h1 {text-align: center;}
+        .center {
+            margin-left:auto;
+            margin-right:auto
+        }
+        th, tr {
+            background-color: rgba(26, 127, 53, 0.651);
+        }
+        input[type="text"] {
+            background: transparent;
+            border: none;
+            font-size:16px
+        }
+    </style>
     <head>
-
+        <title>HCL ASSIGNMENT-02</title>
     </head>
 
     <body>
-        
+        <h1>Monkey Park Feedback Form</h1>
+        <form>
+            <table border="1" class="center" style="width: 500px;">
+                <thead style="font-size:16pt">
+                    <th colspan="3">Please put down your info here</th>
+                </thead>
+                <tbody style="font-size:16pt">
+                    <tr>
+                        <td style="width: 75px" rowspan="2">Name</td>
+                        <td style="width: 50px">First</td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <tr>
+                            <td>Last</td>
+                            <td>
+                                <input type="text">
+                            </td>
+                        </tr>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Age</td>
+                        <td>
+                            <select name="age" id="country">
+                                <option>6-12</option>
+                                <option>13-15</option>
+                                <option>16-18</option>
+                                <option>19-22</option>
+                                <option>23+</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Sex</td>
+                        <td>
+                            <input type="radio" name="male-female">Male
+                            <input type="radio" name="male-female">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Date of Visit</td>
+                        <td>
+                            <input type="date">
+                        </td>
+                    </tr>
+                </tbody>
+                <tfoot>
+
+                </tfoot>
+            </table>
+            <br>
+            <fieldset class="center" style="width: 474px;">
+                <legend>Visitor's Feedback</legend>
+                <input type="checkbox" name="report" value="clean">The park was clean
+                <input type="checkbox" name="report" value="friendly">The staff were friendly
+                <br>
+                <input type="checkbox" name="report" value="scenery">The scenery was nice
+                <input type="checkbox" name="report" value="monkey" checked>Monkey
+                <input type="checkbox" name="report" value="safe">The place felt safe
+                <br>
+                <label for="other">Other:</label>
+                <input type="text" name="report" id="other">
+            </fieldset>
+            <fieldset class="center" style="width: 474px;">
+                <legend>Visitor's Rating</legend>
+                <input type="radio" name="report" value="onestar">1
+                <input type="radio" name="report" value="twostar">2
+                <input type="radio" name="report" value="threestar">3
+                <input type="radio" name="report" value="fourstar">4
+                <input type="radio" name="report" value="fivestar">5
+            </fieldset>
+        </form>
     </body>
 </main>
